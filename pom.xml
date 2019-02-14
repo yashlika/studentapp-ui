@@ -5,6 +5,13 @@
   <version>2.2-SNAPSHOT</version>
   <packaging>war</packaging>
   <build>
+    <extensions>
+    <extension>
+      <groupId>io.packagecloud.maven.wagon</groupId>
+      <artifactId>maven-packagecloud-wagon</artifactId>
+      <version>0.0.6</version>
+    </extension>
+  </extensions>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
@@ -25,18 +32,16 @@
       </plugin>
     </plugins>
   </build>
-   <distributionManagement>
-        <repository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://172.31.33.77:8081/repository/studentapp-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://172.31.33.77:8081/repository/studentapp-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+  <distributionManagement>
+  <repository>
+    <id>packagecloud-raghudevops34</id>
+    <url>packagecloud+https://packagecloud.io/test-user/myrepo</url>
+  </repository>
+  <snapshotRepository>
+    <id>packagecloud-raghudevops34</id>
+    <url>packagecloud+https://packagecloud.io/test-user/myrepo</url>
+  </snapshotRepository>
+</distributionManagement>
   <dependencies>
   	<dependency>
   		<groupId>javax.servlet</groupId>
