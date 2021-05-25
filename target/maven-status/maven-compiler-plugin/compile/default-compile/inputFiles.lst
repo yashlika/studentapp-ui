@@ -1,7 +1,0 @@
-/root/studentapp-ui/src/com/srk/servlet/RegistrationController.java
-/root/studentapp-ui/src/vo/Student.java
-/root/studentapp-ui/src/com/srk/servlet/ViewStudents.java
-/root/studentapp-ui/src/com/srk/servlet/DeleteStudent.java
-/root/studentapp-ui/src/com/srk/servlet/SaveEditedStudent.java
-/root/studentapp-ui/src/com/srk/servlet/EditStudent.java
-/root/studentapp-ui/src/com/srk/dao/StudentDAO.java
