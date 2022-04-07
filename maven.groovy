@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                echo 'Hello World'
+                git 'https://github.com/Ashmirasheikh/studentapp-ui.git'
             }
         }
     }
