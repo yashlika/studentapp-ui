@@ -6,7 +6,7 @@ pipeline {
                 git 'https://github.com/Ashmirasheikh/demo.git'
             }
         }
-        stage('') {
+        stage('test') {
             steps {
                 git 'https://github.com/Ashmirasheikh/demo.git'
             }
