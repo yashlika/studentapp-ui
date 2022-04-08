@@ -1,4 +1,4 @@
-pipeline {
+pipeline1 {
     agent any
     stages {
         stage('pull') {
