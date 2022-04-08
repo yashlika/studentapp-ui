@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages {
-        stage('build') {
+        stage('pull') {
             steps {
                 git 'https://github.com/Ashmirasheikh/demo.git'
             }
