@@ -6,5 +6,10 @@ pipeline {
                 git 'https://github.com/Ashmirasheikh/demo.git'
             }
         }
+        stage('test') {
+            steps {
+                git 'https://github.com/Ashmirasheikh/demo.git'
+            }
+        }
     }
 }
