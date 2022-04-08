@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                git 'https://github.com/Ashmirasheikh/demo.git'
+                echo 'test successful'
             }
         }
     }
