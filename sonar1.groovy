@@ -6,6 +6,11 @@ pipeline {
                git 'https://github.com/Ashmirasheikh/studentapp-ui.git' 
             }
         }
+         stage('build') { 
+            steps {
+               echo 'build successful'
+            }
+        }
        
     }
 }
