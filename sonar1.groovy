@@ -6,15 +6,6 @@ pipeline {
                git 'https://github.com/Ashmirasheikh/studentapp-ui.git' 
             }
         }
-        stage('build') { 
-            steps {
-                sh 'mvn clean package' 
-            }
-        }
-        stage('test') { 
-            steps {
-                echo 'test successful' 
-            }
-        }
+       
     }
 }
