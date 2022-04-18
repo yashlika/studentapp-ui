@@ -17,13 +17,13 @@ pipeline {
             }
         }
     }
-        stage('QualityCheck') {
+        stage('QualityCheck') { 
             steps { 
                 timeout(time: 1, unit: 'HOURS') {
-                 waitForQualityGate true
-             }
+                    waitForQualityGate true
+                }  
+            }
         }
-    }
         stage('deploy') { 
             steps {
                deploy adapters: [tomcat8(path: '', url: 'http://13.38.137.6:8080')], contextPath: '/', war: ' "**/*.war"'
