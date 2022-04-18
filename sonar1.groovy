@@ -14,8 +14,12 @@ pipeline {
        stage('test') { 
             steps { withSonarQubeEnv ('sonar1') {
                 sh 'mvn sonar:sonar'
-}
             }
         }
     }
+        stage('deploy') { 
+            steps {
+               deploy adapters: [tomcat8(path: '', url: 'http://13.38.137.6:8080')], contextPath: '/', war: ' "**/*.war"'
+            }
+        }
 }
