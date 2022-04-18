@@ -18,9 +18,9 @@ pipeline {
         }
     }
         stage('QualityCheck') {
-        steps { 
-            timeout(time: 1, unit: 'HOURS') {
-             waitForQualityGate true
+            steps { 
+                timeout(time: 1, unit: 'HOURS')
+                 waitForQualityGate true
              }
     }
         stage('deploy') { 
